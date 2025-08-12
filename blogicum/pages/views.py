@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def about(request):
-    return HttpResponse("О сайте")
+    return render(request, 'about.html')
 
 def rules(request):
-    return HttpResponse("Правила сайта")
+    return render(request, 'rules.html')
 
